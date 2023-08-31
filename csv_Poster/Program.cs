@@ -81,7 +81,7 @@ using (var client = new HttpClient())
     }
     catch (HttpRequestException)
     {
-        Console.WriteLine("Failed to post customers: Endpoint not available");
+        Console.WriteLine("Failed to post customers: Endpoint " + endpoint + " not available");
         return;
     }
 
